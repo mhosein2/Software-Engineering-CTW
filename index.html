@@ -1,0 +1,23 @@
+<html>
+        <head>
+                <title> Homework 4
+                </title>
+                <link rel="stylesheet" href="/static/style.css"/>
+        </head>
+<body>
+        <h1> Hello World </h1>
+        <h2>{{name}}'s favorite TV shows are:  </h2>
+        <ol>
+                {%for i in range (0, len)%}
+
+                        {%if favShows[i] == "Cobra Kai" %}
+                                <li class="favorite">{{favShows[i]}}</li>
+                        {% else %}
+                                <li>{{favShows[i]}}</li>
+                        {%endif%}
+                {%endfor%}
+
+        </ol>
+
+</body>
+</html>
